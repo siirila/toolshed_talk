@@ -8,9 +8,11 @@ Or it was so simple that no tooling was needed.
 
 With dynamic pages and SPAs front-end tooling needed to handle a lot more
 - Download dependencies
+- Modularization
 - Scaffold up an application
 - Minify JavaScript, CSS, and HTML
 - Concatenate files to minimize requests
+- Create Source Maps
 - CSS preprocessing from LESS, SASS, Etc
 - Image optimization
 - Lint
@@ -21,11 +23,64 @@ With dynamic pages and SPAs front-end tooling needed to handle a lot more
 
 
 
-# 
-# Task Runners
+# Front-end Development Steps
 
+
+# Architecture
+## Generators / Scaffolding
+## Boilerplate
+
+
+# Package Management
+## Download packages
+## Update packages
+
+
+# Develop
+## Editor Tooling
+## Lint
+## Style Enforcement
+## Watch for file changes
+## Live Reload / Hot Reload
+
+
+# Build
+## Run Unit Tests
+## Lint
+## Transpile
+## Preprocess CSS, HTML, Etc
+## Optimize images
+## Concatenate
+## Minify
+## Create Source Maps
+## Development Server
+
+
+# Deployment
+
+
+
+# Minifiers
+- Google Closure Compiler
+- JSMin
+- UglifyJS
+- CSSNano
+- HTMLMinifier
+- YUICompressor
+
+
+
+# Package Management
+- NPM
+- Bower
+
+
+
+# Task Runners
 - Grunt
 - Gulp
+- NPM
+- Make
 
 
 # Grunt
@@ -77,12 +132,29 @@ We need to be able to transpile to JavaScript from
 
 
 
+# Module Bundlers
+- Webpack
+- Browserify
+- Rollup.JS
+
+
+
 # Webpack
     production
     unbiased
 the flexible module bundler
     extensible
     open source
+
+
+
+# Linters
+- ESLint
+- JSCS
+- JSLint
+- JSHint
+- CSSLint
+
 
 
 
