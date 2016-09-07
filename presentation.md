@@ -1,4 +1,5 @@
 ## Outline
+Overview
 History
 Epic slide
 Concepts/Tools
@@ -7,8 +8,30 @@ Future
 
 
 
+# Tool Types Covered
+- Package Manager
+- Generator
+- Build System/Task Runner
+- Linter
+- Module Loader/Bundler
+- Concatenator & Minifier
+- JS Transpiler
+- CSS Preprocessor
+- Dev Server
+- Testing
+
+
+# Not Covered
+- Editors
+- Source Control
+- Frameworks
+- Continuous Integration
+
+
+
 # History
-A brief, mostly inaccurate, and completely subjective history of front-end tooling
+A brief, mostly inaccurate, and subjebctive history of front-end tooling
+
 
 # Before 1999
 Simple
@@ -27,7 +50,6 @@ The beginning of AJAX
 Nothing!
 
 
-
 # 2005 & 2006
 JS Frameworks Generation 1
 Note:jQuery
@@ -39,11 +61,12 @@ MooTools
 
 
 > With great power, comes the need for great tooling!
+
 Somebody...maybe
 
 
 Minify
-Compress
+Concatenate
 Lint
 Note: With larger JS codebased, we needed to create quality code and optimize
 the browser performance
@@ -84,6 +107,7 @@ We still hate JS, just not as much
 You got your JS in my markup
 You got your markup in my JS
 - JSX
+
 
 # 2015
 JS is looking a little dated, how about a refresh
@@ -224,7 +248,6 @@ Note: Feature Checklist
 - [ ] Optimize Images
 
 
-
 # Angular-cli
 - Development server
 - Generators
@@ -244,7 +267,6 @@ Note: Feature Checklist
 - [X] Concatenate
 - [X] Source Maps
 - [X] Optimize Images
-
 
 
 # Create-react-app
@@ -272,7 +294,6 @@ Note: Feature Checklist
 - [X] Optimize Images
 
 
-
 # Vue-cli
 - Allows different toolchains
 - Wraps all function inside npm script calls
@@ -294,7 +315,6 @@ Note: Feature Checklist
 - [X] Concatenate
 - [X] Source Maps
 - [ ] Optimize Images
-
 
 
 # Angular-seed
@@ -333,28 +353,97 @@ Otherwise, let's start at the top and work our way down
 
 
 
-# First Choice - Package Manager
-## npm
+# Package Manager
+Note: The main purpose is to allow you to avoid NIH syndrome and manage dependencies efficiently
+
+
+## Options
+- npm (2010)
+- Bower (2012)
+- Duo (2014)
+- JSPM (2014)
+
+
+## Opinion
 npm has taken over as the defacto package manager for front-end development.
 There are some projects still using Bower (i.e. Ember), and some projects still only available through Bower.
 JSPM is starting to gain traction, but not enough to consider it outside of SystemJS yet
 
 
 
-# Minifiers
-- Google Closure Compiler
-- JSMin
-- UglifyJS
-- CSSNano
-- HTMLMinifier
-- YUICompressor
+# Generators
+Used to scaffold out code quickly and consistently
+
+
+## Options
+- Yeoman (2012)
+- Framework specific generator
 
 
 
-# Package Management
-- npm
-- Bower
-- JSPM
+# Linters
+Quality and consistency checker
+
+
+## Options
+- JSLint (2002)
+- JSHint (2010)
+- ESLint (2013)
+
+
+## Opinion
+ESLint is the most versatile option
+
+
+
+# Concatenator, Minifiers, & Source Maps
+Create few files and smaller file size for the browser to download
+
+A very basic form of obfuscation
+
+A source map allows you to view the unminified code for debugging,
+but run the minified version of the code
+
+
+## Options
+- JSMin (2003)
+- YUI Compressor
+- Closure Compiler (2009)
+- UglifyJS (2010)
+
+
+## Opinion
+Doesn't matter as long as it can create source maps
+
+
+# JS Transpiler
+
+
+## Options
+- Traceur (2012)
+- Babel (2014)
+
+
+## Opinion
+Go with an option that generates readable transpiled code.
+
+Currently Babel does a great job of that.
+
+
+# CSS Preprocessors
+CSS Sucks!
+
+
+
+
+
+
+# Module Loaders/Bundlers
+# Build Systems/Task Runners
+# Dev Server
+# Testing
+
+
 
 
 
@@ -415,6 +504,7 @@ We need to be able to transpile to JavaScript from
 
 
 # Module Bundlers
+
 - Webpack
 - Browserify
 - Rollup.JS
@@ -422,30 +512,17 @@ We need to be able to transpile to JavaScript from
 
 
 # Webpack
+
     production
     unbiased
 the flexible module bundler
+    
     extensible
     open source
 
 
+Has an arcane syntax that is best configured through the advanced approach known as copy and paste
 
-# Linters
-- ESLint
-- JSCS
-- JSLint
-- JSHint
-- CSSLint
+Popular mainly because developers would rather have a small build config file that nobody can read instead of a large, mostly readable config file
 
 
-
-
-# ESLint
-
-
-
-# Babel
-
-
-
-# npm
