@@ -1,123 +1,3 @@
-## Outline
-Overview
-History
-Epic slide
-Concepts/Tools
-Opinions
-Future
-
-
-
-# Tool Types Covered
-- Package Manager
-- Generator
-- Build System/Task Runner
-- Linter
-- Module Loader/Bundler
-- Concatenator & Minifier
-- JS Transpiler
-- CSS Preprocessor
-- Dev Server
-- Testing
-
-
-# Not Covered
-- Editors
-- Source Control
-- Frameworks
-- Continuous Integration
-
-
-
-# History
-A brief, mostly inaccurate, and subjebctive history of front-end tooling
-
-
-# Before 1999
-Simple
-
-Backend does 99% of the work
-
-
-# 1999 & 2000
-Microsoft creates XMLHTTP
-Mozilla creates XMLHTTPRequest
-
-The beginning of AJAX
-
-
-# 2000-2004
-Nothing!
-
-
-# 2005 & 2006
-JS Frameworks Generation 1
-Note:jQuery
-Google Web Toolkit
-YUI
-Dojo
-Prototype
-MooTools
-
-
-> With great power, comes the need for great tooling!
-
-Somebody...maybe
-
-
-Minify
-Concatenate
-Lint
-Note: With larger JS codebased, we needed to create quality code and optimize
-the browser performance
-
-
-# 2002 & 2003
-Douglas Crockford travels back in time to create the tooling we will need in the future
-
-JSLint
-JSMin
-
-
-# 2007 - 2009
-We start building complex web applications
-
-
-# 2009
-Modules
-- CommonJS
-- AMD
-JavaScript Everywhere
-- Node
-JavaScript Nowhere
-- CoffeeScript
-Note: This produces the need for 
-
-# 2010
-Let's go to the SPA
-- Angular
-npm is creates solely to allow the left-pad fiasco in 6 years
-
-# 2012
-We still hate JS, just not as much
-- TypeScript
-
-
-# 2013
-You got your JS in my markup
-You got your markup in my JS
-- JSX
-
-
-# 2015
-JS is looking a little dated, how about a refresh
-- ES6/ES2015
-Maybe we should create a proper JS module?
-- ES6 modules
-Oops...we forgot to include the module loader
-
-
-
 With dynamic pages and SPAs front-end tooling needed to handle a lot more
 - Download dependencies
 - Modularization
@@ -134,7 +14,7 @@ With dynamic pages and SPAs front-end tooling needed to handle a lot more
 - Live reload / Hot reload
 - Each tools has it's own dot file (.eslint, .babel, .editorconfig, .gitignore, .gitconfig, .vscode, .etc)
 
-
+---
 
 # Front-end Development Steps
 Note: Feature Checklist
@@ -151,6 +31,7 @@ Note: Feature Checklist
 - [ ] Source Maps
 - [ ] Optimize Images
 
+---
 
 # Architecture
 ## Generators / Scaffolding
@@ -184,17 +65,7 @@ Note: Feature Checklist
 
 # Deployment
 
-
-
-# Awesome Animated Slide
-
-
-
-# Stop Graphic
-
-
-# Head Hurts Graphic
-
+---
 
 # Too many options and choices...how to make a decision?
 
@@ -208,16 +79,19 @@ Note: Feature Checklist
 
 
 ## How to make fewer decisions
-- Abstract away the decisions and complexity
-  - Let somebody else make the choice
-  - Choose tools that can accomplish multiple functions
+- KISS
+  - Defer decisions until they are necessary
+- Abstract away underlying tools
   - Wrap underlying tools through a common interface
+- Let someone else decide
+  - Choose tools with sensible defaults
+  - Choose tools that can accomplish multiple functions
 - Use presets
   - babel-preset-es2015
   - AirBnB ESLint rules
 - Use conventions
 
-
+---
 
 # Let Somebody Else Make the Choice
 - ember-cli
@@ -351,7 +225,7 @@ Considerations when choosing a tool
 Otherwise, let's start at the top and work our way down
 | We may be able let a higher level decision remove decisions further down the stack
 
-
+---
 
 # Package Manager
 Note: The main purpose is to allow you to avoid NIH syndrome and manage dependencies efficiently
@@ -369,7 +243,7 @@ npm has taken over as the defacto package manager for front-end development.
 There are some projects still using Bower (i.e. Ember), and some projects still only available through Bower.
 JSPM is starting to gain traction, but not enough to consider it outside of SystemJS yet
 
-
+---
 
 # Generators
 Used to scaffold out code quickly and consistently
@@ -380,6 +254,13 @@ Used to scaffold out code quickly and consistently
 - Framework specific generator
 
 
+## Opinion
+Generators are useful on large teams and for quick prototyping
+
+They can also be useful to see how other people architect with a framework,
+but only after you are familiar with the framework 
+
+---
 
 # Linters
 Quality and consistency checker
@@ -394,10 +275,10 @@ Quality and consistency checker
 ## Opinion
 ESLint is the most versatile option
 
-
+---
 
 # Concatenator, Minifiers, & Source Maps
-Create few files and smaller file size for the browser to download
+Create fewer and smaller files for the browser to download
 
 A very basic form of obfuscation
 
@@ -415,13 +296,16 @@ but run the minified version of the code
 ## Opinion
 Doesn't matter as long as it can create source maps
 
+---
 
 # JS Transpiler
-
+Convert another programming language, such as CoffeeScript, or a superset of
+JavaScript such as ES6 or TypeScript to browser compatible JavaScript
 
 ## Options
 - Traceur (2012)
 - Babel (2014)
+- Language specific ones such as TypeScript and CoffeeScript
 
 
 ## Opinion
@@ -429,68 +313,80 @@ Go with an option that generates readable transpiled code.
 
 Currently Babel does a great job of that.
 
+---
 
 # CSS Preprocessors
-CSS Sucks!
+Write styling in a more powerful language and convert to CSS
 
 
+## CSS Sucks!
+- Duplication
+- Magic strings
+- Vendor prefixes
 
 
+## Options
+- Less
+- Sass
+- Stylus
+- PostCSS (Actually a little different than a CSS preprocessed language)
+- Autoprefixer (A PostCSS plugin)
 
+
+## Opinion
+Sass and Autoprefixer or PostCSS
+
+Sass if you want to write styling similar to CSS
+or if a designer will be providing the styling
+
+PostCSS if you want more flexibility, want to write CSS in JS
+
+---
 
 # Module Loaders/Bundlers
+JavaScript didn't have a native module concept until ES6,
+so when JS frameworks started to become popular people worked on
+module specs for JS.
+
+AMD and CommonJS modules were a huge leap forward for JS development,
+but they added the need to create module loaders to load the modules.
+
+
+## Options
+- RequireJS
+- Browserify
+- Webpack
+- SystemJS
+- Rollup
+
+
+## Opinion
+Webpack is the best option currently for most people
+
+---
+
 # Build Systems/Task Runners
-# Dev Server
-# Testing
+These are the big boy of build tools.
+They allow for you to perform nearly any build step,
+but tend to require extensive configuration to setup
 
-
-
-
-
-# Task Runners
+# Options
+- Make
 - Grunt
 - Gulp
-- npm
-- Make
+- Npm scripts
+- Mimosa
+- Brunch
+- Broccoli.js
+- SystemJS Builder
+- Fly
 
 
-# Grunt
-## The JavaScript Task Runner
-### Configuration based multipurpose tool
+## Opinion
+Use npm scripts to abstract away any build tool or task runner used
+Only include one of these tools if your build has complex requirements that can't be fulfilled with simpler tools
 
-
-## Sample
-```JavaScript
-module.exports = function(grunt) {
-
-  grunt.initConfig({
-    jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-      options: {
-        globals: {
-          jQuery: true
-        }
-      }
-    },
-    watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint']
-    }
-  });
-
-  grunt.loadnpmTasks('grunt-contrib-jshint');
-  grunt.loadnpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['jshint']);
-
-};
-```
-
-
-# Gulp
-## Automate and enhance your workflow
-
-
+---
 
 # Transpile
 We need to be able to transpile to JavaScript from
@@ -501,28 +397,6 @@ We need to be able to transpile to JavaScript from
 - Elm
 - JavaScript??
 
+---
 
-
-# Module Bundlers
-
-- Webpack
-- Browserify
-- Rollup.JS
-
-
-
-# Webpack
-
-    production
-    unbiased
-the flexible module bundler
-    
-    extensible
-    open source
-
-
-Has an arcane syntax that is best configured through the advanced approach known as copy and paste
-
-Popular mainly because developers would rather have a small build config file that nobody can read instead of a large, mostly readable config file
-
-
+# Dev Server
