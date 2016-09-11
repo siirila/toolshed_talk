@@ -3,6 +3,28 @@
 ### Configuration based multipurpose tool
 
 
+## Joke slide
+- 
+
+
+## Real overview
+
+
+## Basic Example
+
+
+## Features
+
+
+## Advanced Example
+
+
+## Tips and Tricks
+
+
+## Thoughts
+
+
 ## Sample
 ```JavaScript
 module.exports = function(grunt) {

@@ -388,15 +388,11 @@ Only include one of these tools if your build has complex requirements that can'
 
 ---
 
-# Transpile
-We need to be able to transpile to JavaScript from
-- TypeScript
-- CoffeeScript
-- JSX
-- Dart
-- Elm
-- JavaScript??
-
----
-
 # Dev Server
+With front-end frameworks that only talk to the back-end through an API came the need
+for new development servers to quickly develop code without deploying a complex server
+
+
+
+# More Information
+Kicking Sass
