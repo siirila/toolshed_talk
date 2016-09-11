@@ -18,6 +18,8 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<link rel="stylesheet" href="css/custom.css">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -35,6 +37,35 @@
 					<p>
 						<small>Created by <a href="http://www.jaredsiirila.com">Jared Siirila</a> / <a href="http://twitter.com/jtsiirila">@jtsiirila</a></small>
 					</p>
+				</section>
+				<section 
+					data-background-image="images/tool_shed-wallpaper-1920x1080.jpg"
+					data-state="logos"
+				>
+					<img src="images/Npm-logo.svg" alt="" class="fragment logo drop">
+					<img src="images/bower-logo.svg" alt="" class="fragment logo drop">
+					<img src="images/DUO-logo.svg" alt="" class="fragment logo drop">
+					<img src="images/JSPM-logo.svg" alt="" class="fragment logo drop">
+					<img src="images/yeoman.svg" alt="" class="fragment logo drop">
+					<img src="images/jslint.png" alt="" class="fragment logo drop">
+					<img src="images/jshint.png" alt="" class="fragment logo drop">
+					<img src="images/eslint.svg" alt="" class="fragment logo drop">
+					<img src="images/traceur-compiler.svg" alt="" class="fragment logo drop">
+					<img src="images/babel.svg" alt="" class="fragment logo drop">
+					<img src="images/sass.svg" alt="" class="fragment logo drop">
+					<img src="images/less.svg" alt="" class="fragment logo drop">
+					<img src="images/stylus.svg" alt="" class="fragment logo drop">
+					<img src="images/postcss.svg" alt="" class="fragment logo drop">
+					<img src="images/mimosa-logo.png" alt="" class="fragment logo drop">
+					<img src="images/brunch.svg" alt="" class="fragment logo drop">
+					<img src="images/grunt.svg" alt="" class="fragment logo drop">
+					<img src="images/gulp.svg" alt="" class="fragment logo drop">
+					<img src="images/broccoli.svg" alt="" class="fragment logo drop">
+					<img src="images/flyjs.svg" alt="" class="fragment logo drop">
+					<img src="images/require.svg" alt="" class="fragment logo drop">
+					<img src="images/browserify-icon.svg" alt="" class="fragment logo drop">
+					<img src="images/webpack.svg" alt="" class="fragment logo drop">
+					<img src="images/rollupjs.svg" alt="" class="fragment logo drop">
 				</section>
 				<section data-markdown="slides\intro.md"
 						data-separator-vertical="^\n\n">
@@ -70,7 +101,9 @@
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
+		<script src="lib/js/jquery-3.1.0.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<!--<script src="js/custom.js"></script>-->
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -82,7 +115,8 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'js/custom.js' }
 				]
 			});
 		</script>
