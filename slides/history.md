@@ -1,5 +1,5 @@
 # History
-A brief, mostly inaccurate, and subjebctive history of front-end tooling
+A brief, mostly inaccurate, and subjective history of front-end tooling
 
 
 # Before 1999

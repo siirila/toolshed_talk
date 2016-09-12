@@ -1,22 +1,31 @@
 ## Outline
-Epic slide
 Overview
+
 History
-Concepts/Tools
+
+Modern Workflow
+
+Categories
+
+Specific Tools
+
 Opinions
+
 Future
+
+Note: Missing logos: SystemJS, JSMin, Closure Compiler, UglifyJS, Make, SystemJS Builder
 
 ---
 
 ## Tool Types Covered
-- Package Manager
 - Generator
-- Build System/Task Runner
+- Package Manager
 - Linter
 - Module Loader/Bundler
 - Concatenator & Minifier
 - JS Transpiler
 - CSS Preprocessor
+- Build System/Task Runner
 - Dev Server
 
 
@@ -26,16 +35,3 @@ Future
 - Testing
 - Frameworks
 - Continuous Integration
-
----
-
-# Epic Slide
-Note: Missing logos: SystemJS, JSMin, Closure Compiler, UglifyJS, Make, SystemJS Builder
-
----
-
-# Stop Graphic
-
----
-
-# Head Hurts Graphic
