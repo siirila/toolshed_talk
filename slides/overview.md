@@ -2,32 +2,31 @@
 
 
 ## Defer
+- Only add a tool when needed
 
 
 ## Delegate
 - Use presets
   - babel-preset-es2015
-  - AirBnB ESLint rules
+  - eslint:recommended or AirBnB ESLint rules
 - Let someone else decide
   - Choose tools with sensible defaults
-  - Choose tools that can accomplish multiple functions
+  - Choose multi-functional tools
 
 
-
-- Use conventions
+## Convention
 
 
 ## Abstraction
-- Wrap underlying tools in a common interface from another tool
+- Wrap underlying tools in a common interface
 
 ---
 
-# Let Somebody Else Make the Choice
+## Framework Tools 
 - ember-cli
 - angular-cli (Angular 2)
 - create-react-application
 - vue-cli
-- angular-seed (Angular 1)
 
 
 # Ember-cli
@@ -117,22 +116,4 @@
 - [X] Minify
 - [X] Concatenate
 - [X] Source Maps
-- [ ] Optimize Images
-
-
-# Angular-seed
-- Development server
-- Testing
-
-- [ ] Generators
-- [ ] Lint
-- [X] Development Server
-  - [ ] Live Reload
-- [ ] Watch
-- [X] Test
-- [ ] Transpile
-- [ ] Preprocess
-- [ ] Minify
-- [ ] Concatenate
-- [ ] Source Maps
 - [ ] Optimize Images
