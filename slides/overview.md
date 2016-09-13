@@ -13,6 +13,7 @@
   - babel-preset-es2015
   - eslint:recommended or AirBnB ESLint rules
 - Let someone else decide
+  - Use the suggested/preferred tools for your framework
   - Choose tools with sensible defaults
   - Choose multi-functional tools
 

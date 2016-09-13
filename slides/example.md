@@ -1,0 +1,20 @@
+- Create a blank application
+- Create index.html
+- Create app.js
+- Create code to perform steps desired
+- Install a module to the project
+  - Use npm install --save
+- Require that module in app.js
+  - npm install --save-dev webpack
+  - Perform basic webpack build 'webpack src\app.js bin\app.bundle.js'
+- Rebuilding with each change is annoying
+  - Webpack watch mode
+  - Webpack development server
+- Convert some code to ES6 syntax
+  - npm install --save-dev babel-core babel-preset-es2015
+  - Create webpack.config.js
+  - npm install --save-dev babel-loader
+- Add styling to the page
+- Require the styling in app.js
+  - Add sass loader
+
