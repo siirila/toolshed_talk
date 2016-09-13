@@ -1,7 +1,17 @@
-img.fragment.logo {
+/* Reveal.js overrides */
+.reveal section img {
 	border: none;
 	background: none;
 	box-shadow: none;
+}
+
+.reveal ul {
+	list-style-type: none;
+}
+
+/* End Reveal.js overrides */
+
+img.fragment.logo {
 	max-width: none;
 	max-height: none;
 }

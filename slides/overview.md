@@ -5,6 +5,9 @@
 - Only add a tool when needed
 
 
+## Convention
+
+
 ## Delegate
 - Use presets
   - babel-preset-es2015
@@ -14,15 +17,18 @@
   - Choose multi-functional tools
 
 
-## Convention
-
-
 ## Abstraction
 - Wrap underlying tools in a common interface
 
 ---
 
-## Framework Tools 
+## Framework CLI
+- Convention
+- Delegate
+- Abstraction
+
+
+## Great Ones
 - ember-cli
 - angular-cli (Angular 2)
 - create-react-application
@@ -81,6 +87,7 @@
 - JS & CSS minification
 - ES2015 support
 - Doesn't support LESS or Sass
+- Provides an eject button!!!
 
 - [X] Generators
 - [X] Lint

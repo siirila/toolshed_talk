@@ -1,4 +1,13 @@
 # Package Manager
+- Exposing the stupidity of the 260 character path limit in Windows
+- Allows reuse and management of critical libraries, such as left-pad
+
+
+## Purpose
+- Reduce
+- Reuse
+- ~~Recycle~~
+- Update
 Note: The main purpose is to allow you to avoid NIH syndrome and manage dependencies efficiently
 
 
@@ -10,7 +19,9 @@ Note: The main purpose is to allow you to avoid NIH syndrome and manage dependen
 
 
 ## Opinion
-npm has taken over as the defacto package manager for front-end development.
+![NPM](images/logos/Npm-logo.svg)
+
+Note: npm has taken over as the defacto package manager for front-end development.
 There are some projects still using Bower (i.e. Ember), and some projects still only available through Bower.
 JSPM is starting to gain traction, but not enough to consider it outside of SystemJS yet
 
@@ -26,10 +37,8 @@ Used to scaffold out code quickly and consistently
 
 
 ## Opinion
-Generators are useful on large teams and for quick prototyping
-
-They can also be useful to see how other people architect with a framework,
-but only after you are familiar with the framework 
+- Use framework cli generators
+- Avoid Yeoman
 
 ---
 
@@ -44,16 +53,14 @@ Quality and consistency checker
 
 
 ## Opinion
-ESLint is the most versatile option
+![ESLint](images/logos/eslint.svg)ESLint
 
 ---
 
-# Concatenator, Minifiers, & Source Maps
-Create fewer and smaller files for the browser to download
-
-A very basic form of obfuscation
-
-A source map allows you to view the unminified code for debugging,
+## Concatenator, Minifiers, & Source Maps
+- Create fewer and smaller files for the browser to download
+- A very basic form of obfuscation
+- A source map allows you to view the unminified code for debugging,
 but run the minified version of the code
 
 
@@ -65,12 +72,13 @@ but run the minified version of the code
 
 
 ## Opinion
-Doesn't matter as long as it can create source maps
+- UglifyJS
+- A detail to abstract away
 
 ---
 
 # JS Transpiler
-Convert another programming language, such as CoffeeScript, or a superset of
+- Convert another programming language, such as CoffeeScript, or a superset of
 JavaScript such as ES6 or TypeScript to browser compatible JavaScript
 
 ## Options
@@ -80,9 +88,7 @@ JavaScript such as ES6 or TypeScript to browser compatible JavaScript
 
 
 ## Opinion
-Go with an option that generates readable transpiled code.
-
-Currently Babel does a great job of that.
+![Babel](images/logos/babel.svg)
 
 ---
 
